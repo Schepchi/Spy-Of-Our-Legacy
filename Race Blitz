@@ -1,0 +1,25 @@
+import random
+
+def race_blitz():
+obstacles = ["hurdle", "pit", "barricade", "haystack", "tire", "boulder"]
+distance_traveled = 0
+
+print("Welcome to Race Blitz!")
+print("Navigate the sprinter through obstacles and race to the finish line.")
+
+while True:
+obstacle = random.choice(obstacles)
+user_input = input("An obstacle is ahead. Type 'jump' or 'slide' to avoid it: ").lower()
+if (obstacle == "hurdle" or obstacle == "barricade" or obstacle == "tire") and user_input == "jump":
+print("You vaulted over the obstacle!")
+elif (obstacle == "pit" or obstacle == "haystack" or obstacle == "boulder") and user_input == "slide":
+print("You slid under the obstacle!")
+else:
+print(f"Oops! You collided with the {obstacle}. Game over!")
+print(f"You have traveled a distance of {distance_traveled} meters.")
+break
+
+distance_traveled += 10
+print(f"You have covered a distance of {distance_traveled} meters. Keep racing!")
+
+race_blitz()
