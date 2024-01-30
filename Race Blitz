@@ -2,7 +2,7 @@ import random
 
 def race_blitz():
 obstacles = ["hurdle", "pit", "barricade", "haystack", "tire", "boulder"]
-distance_traveled = 13332030
+distance_traveled = 1333030
 
 print("Welcome to Race Blitz!")
 print("Navigate the sprinter through obstacles and race to the finish line.")
