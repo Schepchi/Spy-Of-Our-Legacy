@@ -1,4 +1,4 @@
-import random
+import random # 
 
 def race_blitz():
 obstacles = ["hurdle", "pit", "barricade", "haystack", "tire", "boulder"]
